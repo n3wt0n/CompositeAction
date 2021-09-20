@@ -27,6 +27,7 @@ runs:
           password: ${{inputs.registry_password}}
       
       - name: Set the tag
+        shell: bash
         run: |
           if [ -z "${{inputs.tag}}" ]
           then
