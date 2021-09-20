@@ -1,5 +1,5 @@
 name: "Publish to Docker"
-description: "Pushes built artifacts to Docker"
+description: "Build a container image and Pushes it to Docker registry"
 
 inputs:
   registry_username:
