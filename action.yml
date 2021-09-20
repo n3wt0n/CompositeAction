@@ -36,7 +36,7 @@ runs:
             echo "final_tag=${{inputs.tag}}" >> $GITHUB_ENV
           fi
       
-      - name: Push the Image
+      - name: Build and Push the Image
         uses: docker/build-push-action@v2
         with:
           context: .
