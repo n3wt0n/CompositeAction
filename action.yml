@@ -41,4 +41,4 @@ runs:
         with:
           context: .
           push: true
-          tags: ${{inputs.registry_username}}/${{inputs.image_name}}:$final_tag
+          tags: ${{inputs.registry_username}}/${{inputs.image_name}}:${{env.final_tag}}
